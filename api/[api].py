@@ -14,4 +14,4 @@ class handler(BaseHTTPRequestHandler):
             if getenv("DEBUG") == "true":
                 self.send_error(500, str(err))
             else:
-                self.send_error(500, '{"error": "Internal Server Error"}')
+                self.send_error(500, dumps({"error", "Internal Server Error"}))
